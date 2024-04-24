@@ -18,7 +18,7 @@ public class ThirdProblem {
 
     /**
      * Checks whether a given number is prime.
-     *
+     * Time complexities like O(N) or O(N/2)
      * @param N The number to check for primality.
      * @return true if the given number is prime, false otherwise.
      */
