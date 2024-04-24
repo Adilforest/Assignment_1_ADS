@@ -1,4 +1,4 @@
-Assignment 1 - Algorithms and Data Structures
+**Assignment 1** - Algorithms and Data Structures
 This repository contains solutions to problems from laboratory exercises and practice sessions for Algorithms and Data Structures.
 
 Files
