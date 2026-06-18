@@ -1,28 +1,62 @@
-**Assignment 1** - Algorithms and Data Structures
-This repository contains solutions to problems from laboratory exercises and practice sessions for Algorithms and Data Structures.
+# Algorithms & Data Structures — Assignment 1 (AITU)
 
-Files
-FirstProblem.java - Solution to the problem from the first laboratory exercise.
+![Java](https://img.shields.io/badge/Java-17-007396?logo=openjdk&logoColor=white)
 
-SecondProblem.java - Solution to the problem from the second laboratory exercise.
+## Overview
 
-ThirdProblem.java - Solution to the problem from the third laboratory exercise.
+Eleven standalone Java programs solving classic algorithmic problems using **recursion**. Each solution includes a documented Big-O analysis in the Javadoc. Written as a lab series for the Algorithms & Data Structures course at Astana IT University.
 
-FourthProblem.java - Solution to the problem from the fourth laboratory exercise.
+## What it implements
 
-FifthProblem.java - Solution to the problem from the fifth laboratory exercise.
+- **Recursive minimum** (`FirstProblem`) — finds the minimum element in an array recursively; O(n).
+- **Recursive average** (`SecondProblem`) — sums an array recursively then divides; O(n).
+- **Primality test** (`ThirdProblem`) — trial division up to √n; O(√n).
+- **Factorial** (`Fourthproblem`) — standard recursive factorial; O(n).
+- **Fibonacci** (`FifthProblem`) — naive recursive Fibonacci; O(2ⁿ), complexity noted explicitly.
+- **Power** (`SixthProblem`) — recursive exponentiation aⁿ; O(n).
+- **Reverse print** (`SeventhProblem`) — reads N integers and prints them in reverse using the call stack; O(n).
+- **All-digits check** (`EigthProblem`) — recursive character scan to verify a string is all digits; O(n).
+- **Binomial coefficient** (`NinethProblem`) — Pascal's rule recursion C(n,k); O(2ⁿ).
+- **GCD** (`TenthProblem`) — Euclidean algorithm via recursion; O(log min(a,b)).
+- **Palindrome check** (`Eleventh`) — recursive two-pointer comparison; O(n).
 
-SixthProblem.java - Solution to the problem from the sixth laboratory exercise.
+## Project structure
 
-SeventhProblem.java - Solution to the problem from the seventh laboratory exercise.
+```
+src/
+├── Main.java                  # Entry point (reverse-print demo)
+└── tasks/
+    ├── FirstProblem.java      # Recursive minimum
+    ├── SecondProblem.java     # Recursive average
+    ├── ThirdProblem.java      # Primality test
+    ├── Fourthproblem.java     # Factorial
+    ├── FifthProblem.java      # Fibonacci
+    ├── SixthProblem.java      # Power
+    ├── SeventhProblem.java    # Reverse print
+    ├── EigthProblem.java      # All-digits check
+    ├── NinethProblem.java     # Binomial coefficient
+    ├── TenthProblem.java      # GCD (Euclidean)
+    └── Eleventh.java          # Palindrome check
+```
 
-EigthProblem.java - Solution to the problem from the eighth laboratory exercise.
+## How to run
 
-NinethProblem.java - Solution to the problem from the ninth laboratory exercise.
+Each task has its own `main` method. Compile and run any one individually:
 
-TenthProblem.java - Solution to the problem from the tenth laboratory exercise.
+```bash
+# From the src/ directory
+javac tasks/FifthProblem.java
+java -cp . tasks.FifthProblem
+# Enter n at the prompt, e.g. 10
+```
 
-EleventhProblem.java - Solution to the problem from the final practice session.
+Or compile everything at once:
 
-Usage
-Each Java file contains the solution to a specific problem. You can run these files using any Java compiler or IDE.
+```bash
+javac -d out src/tasks/*.java src/Main.java
+java -cp out tasks.TenthProblem
+```
+
+---
+
+Adil Ormanov — [GitHub](https://github.com/Adilforest)
